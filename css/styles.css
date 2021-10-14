@@ -139,15 +139,17 @@ body{
 
 /* Dignity */
 .dignity {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.71;
     margin-top: 0;
     margin-bottom: 94px;
 }
+.dignity .list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .dignity .item {
-    width: calc((100%-80px)/4);
+    width: 270px;
     margin-right: 30px;
 }
 .dignity .item:last-child {
@@ -162,16 +164,22 @@ body{
     margin-top: 0;
     margin-bottom: 10px;
 }
+.dignity .pre-title {
+    margin: 0;
+}
+
 
 /* Engage */
 .engage {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 94px;
 }
+.engage .list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .engage .item {
-    width: calc((100%-60px)/3);
+    width: 370px;
     margin-right: 30px;
 }
 .engage .item:last-child {
@@ -189,18 +197,20 @@ body{
 
 /* Command */
 .command {
-    display: flex;
-    flex-wrap: wrap;
     background-color:var(--second-background-color);
     font-size: 16px;
     line-height: 1.19;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.command .list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .command .item {
     width: 270px;
     margin-right: 30px;
-    margin-bottom: 94px;
+    text-align: center;
 }
 .command .item:last-child {
     margin-right: 0;
@@ -220,10 +230,13 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 0;
+    margin-top: 30;
     margin-bottom: 10px
 }
-
+.command .pre-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 /* footer */
 footer {
     background-color: var(--footer-backgroud-color);
@@ -254,12 +267,9 @@ address {
 .projects-nav{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
-.projects-nav .active-btn + .active-btn {
-    margin-left: 8px;
-}
-
 .projects-nav .btn {
     color: var(--title-text-color);
     background-color:var(--second-background-color);
@@ -270,6 +280,10 @@ address {
     display: inline-block;
     border-radius: 4px;
     padding: 6px, 22px;
+    margin-right: 8px;
+}
+.projects-nav .btn:last-child {
+    margin-right: 0;
 }
 .active-btn,
 .projects-nav .btn:hover,
@@ -300,4 +314,6 @@ address {
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
