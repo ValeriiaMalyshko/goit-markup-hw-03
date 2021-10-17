@@ -22,7 +22,7 @@ p, h1, h2, h3, h4, h6 {
 }
 img {
     display:block;
-    width: auto;
+    max-width: 100%;
     height: auto;
 }
 .list {
@@ -149,8 +149,6 @@ img {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.88;
-    
-    
 }
 
 /* Dignity */
@@ -237,7 +235,7 @@ img {
     
 }
 .command-data {
-    padding: 30px 70px;
+    padding: 30px 0;
 }
 .command-title-item {
     margin-bottom: 10px;
@@ -288,7 +286,6 @@ address {
     display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-right: 8px;
     color: var(--title-text-color);
     background-color:var(--second-background-color);
     font-family:inherit;
@@ -296,10 +293,10 @@ address {
     font-size: 16px;
     line-height: 1.63;
 }
-.projects-nav .btn:last-child {
-    margin-right: 0;
+.projects-nav .item+.item {
+    margin-left: 8px;
 }
-.active-btn,
+.projects-nav .active-btn,
 .projects-nav .btn:hover,
 .projects-nav .btn:focus {
     background-color: var(--accent-color);
