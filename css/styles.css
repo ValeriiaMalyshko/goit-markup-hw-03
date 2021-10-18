@@ -62,8 +62,10 @@ img {
     font-size: 26px;
     line-height: 1.19;
 }
-.logo-higher {
-    padding: 24px 0;
+.main-menu .higher {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-first{
@@ -125,7 +127,7 @@ img {
 /* Hero */
 .hero {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     background-color: var(--footer-backgroud-color);
     text-align: center;
 }
@@ -236,6 +238,7 @@ img {
 }
 .command-data {
     padding: 30px 0;
+    background-color: var(--primary-background-color);
 }
 .command-title-item {
     margin-bottom: 10px;
@@ -264,13 +267,17 @@ address {
 }
 .contacts-item {
     color: var(--primary-background-color);
+    margin-bottom: 9px;
 }
 .contacts .link {
+    display: block;
     color: var(--primary-background-color) 60%;
+    margin-bottom: 9px;
 }
+
 .contacts .link:hover,
 .contacts .link:focus {
-    color:var(--accent-color)
+    color:var(--accent-color);
 }
 /* Projects */
 .main-projects {
